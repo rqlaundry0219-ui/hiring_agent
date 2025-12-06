@@ -1,4 +1,4 @@
-# backend/app/skills/job_screening.py
+# hiring_agent\backend/app/skills/job_screening.py
 
 def screen_candidate(text: str):
     required = ["leadership", "management", "sales", "communication"]

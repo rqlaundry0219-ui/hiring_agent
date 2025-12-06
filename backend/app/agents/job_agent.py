@@ -1,6 +1,6 @@
-from app.skills.resume_analysis import analyze_resume_text
-from app.skills.job_matching import match_candidate_to_jobs
-from app.skills.job_screening import screen_candidate_for_job
+from backend.app.skills.resume_analysis import analyze_resume_text
+from backend.app.skills.job_matching import match_candidate_to_jobs
+from backend.app.skills.job_screening import screen_candidate_for_job
 
 class JobAgent:
 

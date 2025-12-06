@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.agents.job_agent import JobAgent
+from backend.app.agents.job_agent import JobAgent
 
 app = FastAPI()
 

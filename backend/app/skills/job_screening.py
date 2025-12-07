@@ -1,9 +1,11 @@
-# hiring_agent\backend/app/skills/job_screening.py
+def screen_candidate(candidate_profile: dict, job: dict):
 
-def screen_candidate(text: str):
+    text = (candidate_profile.get("experience", "") + " " +
+            candidate_profile.get("skills", ""))
+
     required = ["leadership", "management", "sales", "communication"]
 
-    detected = [skill for skill in required if skill in text.lower()]
+    detected = [skill for skill in required if skill.lower() in text.lower()]
 
     score = int((len(detected) / len(required)) * 100)
 

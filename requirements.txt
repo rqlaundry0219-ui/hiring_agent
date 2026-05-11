@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+python-multipart
+sqlmodel
+alembic
+aiosqlite
+openai
+langgraph
+pydantic
+pydantic-settings
+python-dotenv
+PyMuPDF
+python-docx
+spacy
+pydparser
+httpx
+tenacity

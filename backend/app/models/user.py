@@ -5,7 +5,8 @@ class User(SQLModel, table=True):
     id: Optional[int] = Field(default=None, primary_key=True)
     full_name: str
     email: str = Field(unique=True, index=True)
-    hashed_password: str
+    password: str
+    role: str = Field(default="seeker")
     is_admin: bool = Field(default=False)
     
     # Links a user to their many applications
